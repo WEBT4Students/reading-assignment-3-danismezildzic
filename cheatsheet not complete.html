@@ -45,5 +45,159 @@
     <p>&lt;dl&gt; : Defines a description list - a description data</p>
     <p>&lt;dt&gt; : Defines a term in a description list - a description term</p>
     <p>&lt;dd&gt; : Describes the term in a description list </p>
+    <br>
+    <h1>HTML Tables</h1>
+    <p>HTML tables allow web developers to arrange data into rows and columns</p>
+    <h3>Example</h3>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Country</h5>
+    <p>Alfreds Futterkiste&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maria Anders&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Germany</p>
+    <p>Centro comercial Moctezuma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Francisco Chang&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mexico</p>
+    <p>Ernst Handel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Roland Mendel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Austria</p>
+    <p>Island Trading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Helen Bennett&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UK</p>
+    <p>Laughing Bacchus Winecellars&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yoshi Tannamuri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canada</p>
+    <p>Magazzini Alimentari Riuniti&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Giovanni Rovelli&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Italy</p>
+    <br>
+    <h1>Define an HTML Table</h1>
+    <p>A table in HTML consists of table cells inside rows and columns</p>
+    <h3>Example</h3>
+    <p>A simple HTML table:</p>
+    <p>&lt;table&gt;</p>
+    <p>&nbsp; &lt;tr&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;th&gt;Company&lt;/th&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;th&gt;Contact&lt;/th&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;th&gt;Country&lt;/th&gt;</p>
+    <p>&nbsp; &lt;/tr&gt;</p>
+    <p>&nbsp; &lt;tr&gt;</p>
+    <p>&nbsp; &nbsp; &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;</p>
+    <p> &nbsp;&nbsp;&nbsp; &lt;td&gt;Maria Anders&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;Germany&lt;/td&gt;</p>
+    <p>&nbsp; &lt;/tr&gt;</p>
+    <p>&nbsp; &lt;tr&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;Francisco Chang&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;Mexico&lt;/td&gt;</p>
+    <p>&nbsp; &lt;/tr&gt;</p>
+    <p>&lt;/table&gt;</p>
+    <br>
+    <h1>Table Cells</h1>
+    <p>Each table cell is defined by a &lt;td&gt; and a &lt;/td&gt; tag</p>
+    <p>td stands for table data.</p>
+    <p>Everything between &lt;td&gt; and &lt;/td&gt; are the content of the table cell</p>
+    <h3>Example</h3>
+    <p>&lt;table&gt;</p>
+    <p>&nbsp; &lt;tr&gt;</p>
+    <p>&nbsp; &nbsp; &lt;td&gt;Emil&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;Tobias&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;Linus&lt;/td&gt;</p>
+    <p>&nbsp; &lt;/tr&gt;</p>
+    <p>&lt;/table&gt;</p>
+    <p>Note: A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc</p>
+    <br>
+    <h1>Table Rows</h1>
+    <p>Each table row starts with a &lt;tr&gt; and ends with a &lt;/tr&gt; tag</p>
+    <p>tr stands for table row</p>
+    <h3>Example</h3>
+    <p>&lt;table&gt;</p>
+    <p>&nbsp; &lt;tr&gt;</p>
+    <p>&nbsp; &nbsp; &lt;td&gt;Emil&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;Tobias&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;Linus&lt;/td&gt;</p>
+    <p>&nbsp; &lt;/tr&gt;</p>
+    <p>&nbsp; &lt;tr&gt;</p>
+    <p>&nbsp; &nbsp; &lt;td&gt;16&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;14&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;10&lt;/td&gt;</p>
+    <p>&nbsp; &lt;/tr&gt;</p>
+    <p>&lt;/table&gt;</p>
+    <p>You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row</p>
+    <p>Note: There are times when a row can have less or more cells than another. You will learn about that in a later chapter</p>
+    <br>
+    <h1>Table Headers</h1>
+    <p>Sometimes you want your cells to be table header cells. In those cases use the &lt;th&gt; tag instead of the &lt;td&gt; tag:</p>
+    <p>th stands for table header</p>
+    <h3>Example</h3>
+    <p>Let the first row be table header cells:</p>
+    <p>&lt;table&gt;</p>
+    <p>&nbsp; &lt;tr&gt;</p>
+    <p>&nbsp; &nbsp; &lt;th&gt;Person 1&lt;/th&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;th&gt;Person 2&lt;/th&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;th&gt;Person 3&lt;/th&gt;</p>
+    <p>&nbsp; &lt;/tr&gt;</p>
+    <p>&nbsp; &lt;tr&gt;</p>
+    <p>&nbsp; &nbsp; &lt;td&gt;Emil&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;Tobias&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;Linus&lt;/td&gt;</p>
+    <p>&nbsp; &lt;/tr&gt;</p>
+    <p>&nbsp; &lt;tr&gt;</p>
+    <p>&nbsp; &nbsp; &lt;td&gt;16&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;14&lt;/td&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp; &lt;td&gt;10&lt;/td&gt;</p>
+    <p>&nbsp; &lt;/tr&gt;</p>
+    <p>&lt;/table&gt;</p>
+    <p>By default, the text in &lt;th&gt; elements are bold and centered, but you can change that with CSS</p>
+    <br>
+    <h1>HTML Table Tags</h1>
+    <h5>Tag&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description</h5>
+    <p>&lt;table&gt; 	Defines a table</p>
+    <p>&lt;th&gt; 	Defines a header cell in a table</p>
+    <p>&lt;tr&gt; 	Defines a row in a table</p>
+    <p>&lt;td&gt; 	Defines a cell in a table</p>
+    <p>&lt;caption&gt; 	Defines a table caption</p>
+    <p>&lt;colgroup&gt; 	Specifies a group of one or more columns in a table for formatting</p>
+    <p>&lt;col&gt; 	Specifies column properties for each column within a <colgroup> element</p>
+    <p>&lt;thead&gt; 	Groups the header content in a table</p>
+    <p>&lt;tbody&gt; 	Groups the body content in a table</p>
+    <p>&lt;tfoot&gt; 	Groups the footer content in a table</p>
+    <br>
+    <h5>Table Header</h5>
+    <p>The &lt;th&gt; HTML element defines a cell as header of a group of table cells</p>
+    <h3>Example</h3>
+    <table>
+        <caption>Hello World</caption>
+        <tr>
+            <th> Hello User!!</th>
+        </tr>        
+    </table>
+    <h5>Code:</h5>
+    <p>&lt;table&gt;</p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;caption&gt;Hello World&lt;/caption&gt;</p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;th&gt; Hello User!!&lt;/th&gt;</p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+    <p>&lt;/table&gt;</p>
+    <br>
+    <h1>Table Body and footer</h1>
+    <p>The &lt;tbody&gt; tag is used to group the body content in an HTML table</p>
+    <h3>Example</h3>
+    <p>An HTML table with a &lt;thead&gt;, &lt;tbody&gt;, and a &lt;tfoot&gt; element</p>
+    <p>The <code>&lt;tbody&gt;</code> element is used in conjunction with the &lt;thead&gt; and &lt;tfoot&gt; elements to specify each part of a table (body, header, footer).</p>
+    <p><strong>Note:</strong> The <code>&lt;tbody&gt;</code> element must have one or more &lt;tr&gt; tags inside.</p>
+    <p>The <code>&lt;tbody&gt;</code> tag must be used in the following context: As a child of a &lt;table&gt; element, after any &lt;caption, &lt;colgroup&gt;, and &lt;thead&gt; elements.</p>
+    
+    <p>&lt;table&gt;<br />
+        &nbsp; &lt;thead&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Month&lt;/th&gt;<br />
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Savings&lt;/th&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;/tr&gt;<br />
+        &nbsp; &lt;/thead&gt;<br />
+        &nbsp; &lt;tbody&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;January&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;$100&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;/tr&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;February&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;$80&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;/tr&gt;<br />
+        &nbsp; &lt;/tbody&gt;<br />
+        &nbsp; &lt;tfoot&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Sum&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;$180&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;/tr&gt;<br />
+        &nbsp; &lt;/tfoot&gt;<br />
+        &lt;/table&gt;</p>
+        
 </body>
 </html>
